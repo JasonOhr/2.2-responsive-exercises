@@ -30,10 +30,50 @@ div.food{
     font-size: 1.3em;
 }
 @media (max-width: 840px) and (min-width: 501px) {
+
     div.food {
         display: block;
+        width: auto;
+        margin-bottom: 2%;
+    }
+
+    .description, img {
+        display: inline-block;
+
+    }
+    img {
+
+        max-width: 30%
+    }
+    .description {
+        max-width: 60%;
+        margin: 0 2%;
+        vertical-align: top;
+        font-size: 11px
+    }
+    .description h2 {
+        margin: 0 0 2% 0;
     }
 }
 @media (max-width: 500px) {
+    .container {
+        margin: 0 auto;
 
+    }
+
+    .food img{
+        width: 80%;
+        margin: 0 10%
+    }
+
+    div.food {
+        display: block;
+        width: auto;
+    }
+    .description {
+        text-align: center;
+        font-size: 1em;
+        margin: 0 3% 14% 3%;
+
+    }
 }
